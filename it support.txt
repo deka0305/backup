@@ -1,0 +1,8 @@
+maintenance printer 
+reset printer
+maintenance cpu
+
+user lapangan
+Z:\DIT\ISO Documents\DOKUMEN ISO\2023\Daftar Penguna Jaringan
+
+sfc/scannow
