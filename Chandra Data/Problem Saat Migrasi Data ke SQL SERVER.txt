@@ -1,0 +1,17 @@
+List Problem Migrasi SQL Server QC After Sales
+
+Test Go Live 1 5/8/24:
+1. Table NCP_QCF dan NCP_QCF_NEW dari MYSQL tidak bisa dilakukan syncronize ke sql server.
+	action : Skip migrasi mysql ke sql server karena harus ada perubahan data dan Fokus ke BD2.
+2. Data sangat lambat:
+	Problem :
+		1. Server load karena bentrok applikasi dengan IBM Data Console.
+			Action : Remove IBM Data Console --> New Server
+		2. Data size terlalu cepat increase dari 200 GB ke 2,3 TB, possibility karena view tidak compatible untuk di syncronize tapi view harus di buat ulang.
+			Action : Remove view dan abnormal syncronize table 
+		3. Index baru tidak terbawa ke sql server
+			Action : Reindex
+		4. Remove unecessary software
+
+
+ 
